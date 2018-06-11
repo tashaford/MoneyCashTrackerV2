@@ -1,0 +1,45 @@
+<form id="new" action="/transactions" method="POST">
+
+  <label>
+    Select a User ID:
+    <select name="user_id" id="user_id">
+      <% for user in @users %>
+      <option value="<%= user.id%>"><%= user.name%>
+      </option>
+      <% end %>
+    </select>
+  </label>
+  <br>
+
+  <label for="name">Amount:</label>
+  <input type="text" id="amount" name="amount"><br>
+
+  <label for="description">Description:</label>
+  <input type="text" id="description" name="description"><br>
+
+  <label>
+    Select a tag:
+    <select name="tag_id" id="tag_id">
+      <% for tag in @tags %>
+      <option value="<%= tag.id%>"><%= tag.name%>
+      </option>
+      <% end %>
+    </select>
+  </label>
+  <br>
+
+  <label>
+    Select a merchant:
+    <select name="merchant_id" id="merchant_id">
+      <% for merchant in @merchants %>
+      <option value="<%= merchant.id%>"><%= merchant.name %></option>
+      <% end %>
+    </select>
+  </label>
+  <br>
+
+  <label for="date">Date of transaction </label><input type="date" name="date" id="label_button"><br>
+
+  <input class="button" type="submit" value="Add transaction"><br>
+
+</form>

@@ -1,0 +1,201 @@
+a {
+  text-decoration: none;
+  font-size: 1.4em;
+  color: #25283D;
+  font-weight: 700;
+}
+
+body {
+  color: #25283D;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+form {
+  font-size: 2em;
+  margin-top: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header {
+  color: #3D5467;
+}
+
+html {
+  background-image: url("./pexels-photo-218434.jpeg");
+  background-position: center;
+  background-size:cover;
+  position: center;        
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+}
+
+h1 {
+  font-size: 3em;
+  color: #114B5F;
+  font-family: 'Tillana', sans-serif;
+  margin: 0px;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  font-size: 0.7em;
+  margin: 10px;
+}
+
+li {
+  margin: 20px;
+  font-size: 1.5em;
+  text-align: left;
+  padding-left: 125px;
+}
+
+main {
+  background-color: lightgrey;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+p {
+  font-size: 2em;
+  margin: 5px;
+}
+
+select {
+  height: 30px;
+  width: 200px;
+  font-size: 0.7em;
+  margin: 10px;
+}
+
+table {
+  display: inline-block;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+table#t01 {
+  font-size: 1.6em;
+}
+
+tbody {
+  position: relative;
+}
+
+td, th {
+  background-position: center;
+  background-color: #A39BA8;
+  position: relative;
+  text-align: center;        
+  vertical-align: middle;
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#nav {
+font-size: 2em;
+font-weight: 600;
+padding-right: 80px;
+padding-left: 80px;
+font-family: 'Tillana', cursive;
+}
+
+#nav_back {
+  background-color: #B4C5E4;
+}
+
+#descrip {
+  width: 300px;
+  position: relative;        
+}
+
+#label_button {
+  width: 170px;
+}
+
+#main_title {
+  font-size: 6em;
+  text-align: center;
+  margin: 0px;
+}
+
+#new {
+  background-color: #A39BA8;
+  width: 600px;
+  padding: 30px;
+}
+
+#total {
+  font-size: 3em;
+  margin: 10px ;
+  position: relative;        
+}
+
+#user {
+  color: #25283D;
+  display: inline-block;
+  font-size: 2em;
+  position: relative;        
+  text-align: left;
+  width: 200px;
+  padding: 20px;
+}
+
+#welc {
+  font-size: 5em;
+  color: #114B5F;
+}
+
+#welc_p {
+  font-size: 3em;
+  color: #114B5F;
+  font-weight: 700;
+}
+
+
+.edit {
+  background-color: #A39BA8;
+  font-size: 1em;
+  padding: 10px ;
+}
+
+.button {
+  height: 60px;
+  width: 250px;
+  font-size: 0.8em;
+  background-color: transparent;
+  color: #25283D;
+}
+
+.indiv {
+  font-size: 1.7em;
+  width: 600px !important;
+}
+
+.indiv td{
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.indiv th{
+  padding: 10px;
+}
+
+.display{
+  font-size: 3em;
+  font-weight: 600;
+}

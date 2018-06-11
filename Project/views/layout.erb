@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bucker</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Tillana" rel="stylesheet">
+        </head>
+<body>
+  <header>
+    <nav id="nav_back">
+      <ul>
+        <a href="/" id="nav">Home Page</a>
+        <a href="/transactions" id="nav">All transactions</a>
+        <a href="/transaction/total" id="nav">Total spending</a>
+      </ul>
+    </nav>
+    <h1 id="main_title">BUCKER</h1>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+  <br>
+  <br>
+  <footer>
+    <nav id="nav_back">
+      <ul>
+        <a href="/users" id="nav">Users</a>
+        <a href="/tags" id="nav">Tags</a>
+        <a href="/merchants" id="nav">Merchants</a>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

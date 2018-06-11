@@ -1,0 +1,30 @@
+<h1>Total spending overall</h1>
+<p id="total">£ <%= @amount %></p>
+
+
+<h1>Spending by tag:</h1>
+<table id="t01">
+  <% for tag in @tags %>
+  <tr>
+    <td><%= tag.name%></td>
+    <td>£ <%= tag.amount_tag %></td> 
+  </tr>
+  <% end %>
+</table>
+<br>
+
+
+<h1>Total spending by month:</h1>
+<form action="/transaction/total/month/" method="get">
+  <label>Select Month:
+    <select name="month_num" id="month_num">
+      <% counter = 1 %>
+      <% for month in @months%>
+      <option value="<%= counter %>"><%=month%></option>
+      <% counter += 1 %>
+      <% end %>
+    </select>
+  </label>
+  <input class="button" type="submit" value="Pick month">
+  <br>
+</form>

@@ -1,0 +1,15 @@
+<h1>Individual merchant</h1>
+<br>
+
+
+<p class="display"><%= @merchant.name %></p>
+<br>
+<br>
+
+<p><a class="edit" href="/merchant/<%= @merchant.id %>/edit">Edit merchant</a></p>
+<br>
+<br>
+
+<form action="/merchant/<%= @merchant.id%>/delete" method="POST">
+  <input class="button" type="submit" value="Delete merchant">
+</form>

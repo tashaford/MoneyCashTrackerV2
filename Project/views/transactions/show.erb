@@ -1,0 +1,29 @@
+<h1>Individual transactions</h1>
+
+<table class="indiv">
+  <tr>
+    <th>Amount: </th>
+    <td><%='%.2f'% @transaction.amount %></td>
+  </tr>
+  <tr>
+    <th>Description: </th>
+    <td><%=@transaction.description %></td>
+  </tr>
+  <tr>
+    <th>Tag: </th>
+    <td><%=@transaction.tag.name %></td>
+  </tr>
+  <tr>
+    <th>Merchant: </th>
+    <td><%=@transaction.merchant.name %></td>
+  </tr>
+</table>
+
+<br><br><br>
+
+<p><a class="edit" href="/transaction/<%=@transaction.id %>/edit">Edit transaction</a></p>
+<br><br>
+<form action="/transaction/<%= @transaction.id %>/delete" method="post">
+  <input class="button" type="submit" value="Delete transaction">
+</form>
+<hr />

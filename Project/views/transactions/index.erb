@@ -1,0 +1,27 @@
+<h1 >All transactions</h1>
+<p>Click on ID number to look at an individual transaction. </p>
+<li><a href="/transaction/new">Add new transaction</a></li>
+
+<table>
+  <tr>
+    <th>ID:</th>
+    <th>Amount: </th>
+    <th id="descrip">Description: </th>
+    <th>Tag: </th>
+    <th>Merchant: </th>
+    <th>Date: </th>
+  </tr>
+  <% for transaction in @transactions %>
+  <tr>
+    <td><a href="/transaction/<%=transaction.id%>"><%= transaction.id %></a></td>
+    <td>£ <%= '%.2f'% transaction.amount %></td>
+    <td id="descrip"><%= transaction.description %></a></td>
+    <td><%= transaction.tag.name %></td>
+    <td><%= transaction.merchant.name %></td>
+    <td><%= transaction.date %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+<br>

@@ -1,0 +1,48 @@
+<form action="/transaction/<%= @transaction.id%>" method="POST">
+
+  <label for="user_id">Select a User ID: </label>
+  <select name="user_id" id="user_id">
+    <% for user in @users %>
+    <% if @transaction.user_id == user.id%>
+    <option selected value="<%= user.id%>"><%= user.name()%>
+    </option>
+    <% else %>
+    <option value="<%=user.id%>"><%=user.name()%></option>
+    <% end %>
+    <% end %>
+  </select><br>
+
+  <label for="amount">Amount:</label>
+  <input type="text" id="amount" name="amount" value=" <%= @transaction.amount %>"><br>
+
+  <label for="description">Description:</label>
+  <input type="text" id="description" name="description" value=" <%= @transaction.description %>"><br>
+
+  <label for="tag_id">Select a tag: </label>
+  <select name="tag_id" id="tag_id">
+    <% for tag in @tags %>
+    <% if @transaction.tag_id == tag.id%>
+    <option selected value="<%=tag.id%>"><%=tag.name()%></option>
+    <%else%>
+    <option value="<%=tag.id%>"><%= tag.name()%></option>
+    <% end %>
+    <% end %>
+  </select><br>
+
+  <label for="merchant_id">Select a merchant: </label>
+  <select name="merchant_id" id="merchant_id">
+    <% for merchant in @merchants %>
+    <% if @transaction.merchant_id == merchant.id%>
+    <option selected value="<%=merchant.id%>"><%=merchant.name()%></option>
+    <%else%>
+    <option value=" <%= merchant.id%>"><%= merchant.name()%></option>
+    <% end %>
+    <% end %>
+  </select><br>
+
+  <label for="inputdate">Date of transaction </label>
+  <input type="date" id="date" name="date" value="<%= @transaction.date%>"><br>
+
+  <input type="submit" value="Edit transaction"><br>
+
+</form>

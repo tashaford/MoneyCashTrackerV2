@@ -1,0 +1,14 @@
+<h1>Individual tag</h1>
+<br>
+
+<p class="display"><%=@tag.name %></p>
+<br>
+<br>
+
+<p><a class="edit" href="/tag/<%=@tag.id %>/edit">Edit tag</a></p>
+<br>
+<br>
+
+<form action="/tag/<%= @tag.id %>/delete" method="post">
+  <input class="button" type="submit" value="Delete tag">
+</form>
